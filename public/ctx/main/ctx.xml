@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+  {"code": "main", "ver": "2022-1208-1233", "status": "dev",  "title": "한글", "current": {}}
+  <sequence>
+    {"code": "-1", "title": "한글", "inorder": true}
+    <scene>
+      {"code": "-1-1", "title": "한글", "inorder": true, "camera": {"fov": 75}, "orbit": {"max": 35, "min": 15, "pi": 24, "teb": 35}}
+      <situation>
+        {"code": "-1-1-1", "title": "Intro", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+          {"name": "title", "mode": "mesh", "type": "font", "file": "playtangram", "value": ["text", "승무"], 
+          "pos": [0, 0, -3], "scale": [0.2, 0.2, 0.2], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "text", "mode": "mesh", "type": "font", "file": "playtangram", "value": ["text", "얇은 사 하이얀 고깔은\n고이 접어서 나빌레라."], 
+          "pos": [0, 0, 2], "scale": [0.08, 0.08, 0.08], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "circle", "mode": "path", "type": "svg", "file": "/src/svg/path.circle.svg", 
+          "pos": [0, 0, 0], "scale": [0.02, 0.02, 0.02], "rotate": [0, 0, 0], "color": "#ffffff", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "car", "mode": "mesh", "type": "glb", "file": "/src/obj/car.glb",  
+          "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "rotate": [0, 0, 0], "color": "#ffffff", "class": "staffs", 
+          "child": 2, "path": "circle", "off": -1}
+        </ctx>
+        <ctx>
+          {"name": "car", "mode": "texture", "type": "img", "file": "/src/txr/car_01-03.png", 
+          "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "rotate": [0, 0, 0], "color": "#ffffff", "class": "staffs", 
+          "group": "car", "off": -1}
+        </ctx>
+        <ctx>
+          {"name": "frame", "mode": "mesh", "type": "svg", "file": "/src/svg/back.frame.svg", 
+          "pos": [0, 0, 0], "scale": [0.04, 0.04, 0.04], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "frame", "mode": "mesh", "type": "svg", "file": "/src/svg/back.frame.svg", 
+          "pos": [0, -20, 0], "scale": [0.04, 0.04, 0.04], "rotate": [0, 0, 0], "color": "#111111", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "frame", "mode": "mesh", "type": "svg", "file": "/src/svg/back.frame.svg", 
+          "pos": [0, -40, 0], "scale": [0.04, 0.04, 0.04], "rotate": [0, 0, 0], "color": "#222222", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "frame", "mode": "mesh", "type": "svg", "file": "/src/svg/back.frame.svg", 
+          "pos": [0, -60, 0], "scale": [0.04, 0.04, 0.04], "rotate": [0, 0, 0], "color": "#333333", "class": "stages"}
+        </ctx>
+        <ctx>
+          {"name": "frame", "mode": "mesh", "type": "svg", "file": "/src/svg/back.frame.svg", 
+          "pos": [0, -80, 0], "scale": [0.04, 0.04, 0.04], "rotate": [0, 0, 0], "color": "#444444", "class": "stages"}
+        </ctx>
+      </situation>
+    </scene>
+  </sequence>
+  <sequence>
+    {"code": "-2", "title": "한글", "inorder": true}
+    <scene>
+      {"code": "-2-1", "title": "가", "inorder": true, "min": 25, "max": 55, "pi": 24}
+      <situation>
+        {"code": "-2-1-1", "title": "", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+        {"code": "-2-1-1-1", "name": "frame", "value": "", "type": "mesh", "to": "scene", "exp": "배경 액자", 
+        "src": "back.frame.svg", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000"}
+        </ctx>
+        <ctx>
+        {"code": "-2-1-1-2", "name": "nabi", "value": "가", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 1", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-1-1-3", "name": "nabi", "value": "나", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 2", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-1-1-4", "name": "flower", "value": "다", "type": "mesh", "to": "scene", "exp": "캐릭터 꽃", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-1-1-6", "name": "eval", "value": "축하하니다!!!", "type": "shape", "to": "scene", "exp": "평가", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-1-1-5", "name": "event", "type": "move", "exp": "이동 나비 꽃", 
+        "pos":["nabi-1-1-1-2", "flower-1-1-1-4"], "time": 0, "done": "auto"}
+        </ctx>
+      </situation>
+    </scene>
+    <scene>
+      {"code": "-2-2", "title": "나빌레라", "inorder": true, "min": 25, "max": 55, "pi": 24}
+      <situation>
+        {"code": "-2-2-1", "title": "", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+        {"code": "-2-2-1-1", "name": "frame", "value": "", "type": "mesh", "to": "scene", "exp": "배경 액자", 
+        "src": "back.frame.svg", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000"}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-1-2", "name": "nabi", "value": "가", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 1", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-1-3", "name": "nabi", "value": "나", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 2", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-1-4", "name": "flower", "value": "다", "type": "mesh", "to": "scene", "exp": "캐릭터 꽃", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-1-6", "name": "eval", "value": "축하하니다!!!", "type": "shape", "to": "scene", "exp": "평가", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-1-5", "name": "event", "type": "move", "exp": "이동 나비 꽃", 
+        "pos":["nabi-1-1-1-2", "flower-1-1-1-4"], "time": 0, "done": "auto"}
+        </ctx>
+      </situation>
+      <situation>
+        {"code": "-2-2-2", "title": "", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+        {"code": "-2-2-2-1", "name": "frame", "value": "", "type": "mesh", "to": "scene", "exp": "배경 액자", 
+        "src": "back.frame.svg", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000"}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-2-2", "name": "nabi", "value": "가", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 1", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-2-3", "name": "nabi", "value": "나", "type": "mesh", "to": "scene", "exp": "캐릭터 나비 날개 2", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0.5}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-2-4", "name": "flower", "value": "다", "type": "mesh", "to": "scene", "exp": "캐릭터 꽃", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-2-6", "name": "eval", "value": "축하하니다!!!", "type": "shape", "to": "scene", "exp": "평가", 
+        "src": "PlatTangram M", "pos": [0, 0, 0], "scale": [0.1, 0.1, 0.1], "color": "#000000", "tick": 0}
+        </ctx>
+        <ctx>
+        {"code": "-2-2-2-5", "name": "event", "type": "move", "exp": "이동 나비 꽃", 
+        "pos":["nabi-1-1-1-2", "flower-1-1-1-4"], "time": 0, "done": "auto"}
+        </ctx>
+      </situation>
+    </scene>
+  </sequence>
+  <sequence>
+    {"code": "-3", "title": "Nabillela", "inorder": true}
+    <scene>
+      {"code": "-3-1", "title": "다라마바사아", "inorder": true, "min": 25, "max": 55, "pi": 24}
+      <situation>
+      {"code": "-3-1-1", "title": "Intro", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+          {"name": "title", "mode": "mesh", "type": "font", "file": "playtangram", "value": ["text", "승무"], 
+          "pos": [0, 0, -3], "scale": [0.2, 0.2, 0.2], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+      </situation>
+    </scene>
+    <scene>
+      {"code": "-3-2", "title": "라마바", "inorder": true, "min": 25, "max": 55, "pi": 24}
+      <situation>
+      {"code": "-3-2-1", "title": "Intro", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+          {"name": "title", "mode": "mesh", "type": "font", "file": "playtangram", "value": ["text", "승무"], 
+          "pos": [0, 0, -3], "scale": [0.2, 0.2, 0.2], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+      </situation>
+    </scene>
+    <scene>
+      {"code": "-3-3", "title": "마바사아", "inorder": true, "min": 25, "max": 55, "pi": 24}
+      <situation>
+      {"code": "-3-3-1", "title": "Intro", "inorder": true, "bgms": [], "nars": []}
+        <ctx>
+          {"name": "title", "mode": "mesh", "type": "font", "file": "playtangram", "value": ["text", "승무"], 
+          "pos": [0, 0, -3], "scale": [0.2, 0.2, 0.2], "rotate": [0, 0, 0], "color": "#000000", "class": "stages"}
+        </ctx>
+      </situation>
+    </scene>
+  </sequence>
+</story>
