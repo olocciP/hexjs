@@ -1,6 +1,8 @@
 # hexjs
 
 
+
+### 240713
 # Node 
 ~$ node -v 
 ~$ v12.13.1
@@ -9,7 +11,6 @@
 ~$ npm install dotenv 
 
 ~$ node app.js
-
 
 # MYSQL 8.0
 
